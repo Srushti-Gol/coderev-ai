@@ -44,7 +44,7 @@ Detect security vulnerabilities, performance bottlenecks, duplicate code, and te
 
 > Every PR gets a full AI-generated review with categorised findings: Security, Bugs, Performance, Readability, Best Practices, and auto-generated tests.
 
-![PR Analysis View](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/pr-analysis.png)
+![PR Analysis View](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-analysis.png)
 
 The AI reviewer acts as a senior engineer. It reads the full diff, understands context, and posts structured comments directly on GitHub — with before/after code suggestions you can apply with one click.
 
@@ -54,7 +54,7 @@ The AI reviewer acts as a senior engineer. It reads the full diff, understands c
 
 > Real-time engineering metrics: open PRs, merge rate, average cycle time, time to first review, stale PRs, and awaiting-review queue.
 
-![Dashboard Overview](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/dashboard.png)
+![Dashboard Overview](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/dashboard.png)
 
 **Charts included:**
 - 📈 PR Velocity — opened, merged, closed per week (line chart)
@@ -69,7 +69,7 @@ The AI reviewer acts as a senior engineer. It reads the full diff, understands c
 
 > Aggregated view across all PRs: total suggestions by category, PRs per day trend, and suggestion breakdown.
 
-![Code Review Dashboard](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/code-review-dashboard.png)
+![Code Review Dashboard](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/code-review-dashboard.png)
 
 Filter by repository and date range. Drill into individual PRs to see all findings with file paths, line numbers, and AI-generated fixes.
 
@@ -79,7 +79,7 @@ Filter by repository and date range. Drill into individual PRs to see all findin
 
 > See all open PRs at a glance with their pipeline stage (Opened → Checks → AI Review → Ready), age in days, scope (files changed), and one-click Review/Merge actions.
 
-![Pull Requests List](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/pr-list.png)
+![Pull Requests List](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-list.png)
 
 PRs stale beyond your configured threshold are highlighted in red. Filter by status, author, or repository.
 
@@ -89,7 +89,7 @@ PRs stale beyond your configured threshold are highlighted in red. Filter by sta
 
 > Each finding shows severity (CRITICAL / HIGH / MEDIUM / LOW), affected file and line range, a plain-English explanation, and an AI-generated code fix.
 
-![AI Review Finding](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/ai-finding.png)
+![AI Review Finding](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/ai-finding.png)
 
 Security findings include CVE references where applicable. Code suggestions are tested before being marked **Verified** ✅.
 
@@ -99,7 +99,7 @@ Security findings include CVE references where applicable. Code suggestions are 
 
 > Track your quality score over time. See cost-to-fix estimates per category: defect removal, duplicate code refactoring, complexity reduction, and readability improvements.
 
-![Technical Debt Dashboard](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/technical-debt.png)
+![Technical Debt Dashboard](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/technical-debt.png)
 
 Compare quality between any two releases or git tags. The debt score is a weighted composite of security findings, complexity, duplication, and test coverage.
 
@@ -109,7 +109,7 @@ Compare quality between any two releases or git tags. The debt score is a weight
 
 > Full security analysis with CVSS-inspired severity scoring. Export findings as SARIF 2.1.0 for GitHub Advanced Security integration.
 
-![Security Findings](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/security.png)
+![Security Findings](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/security.png)
 
 Detects:
 - 🔴 SQL Injection (direct string interpolation in queries)
@@ -122,11 +122,19 @@ Detects:
 
 ---
 
-### Repository Health Overview
+### PR Pipeline — Progress Tracker
 
-> Per-repository health score across 5 dimensions with trend over the last 90 days.
+> Track every PR through the pipeline: Opened → Checks → AI Review → Ready to Merge, with age indicators and scope (files changed).
 
-![Repository Health](https://raw.githubusercontent.com/placeholder/coderev-ai/main/docs/screenshots/repo-health.png)
+![PR Pipeline](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-pipeline.png)
+
+---
+
+### AI Review Detail — Findings Breakdown
+
+> Deep-dive into individual PR findings with tabs for Security, Bugs, Performance, Readability, Best Practices, and Docs, plus a final verdict with confidence score.
+
+![AI Review Detail](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/ai-review-detail.png)
 
 ---
 
