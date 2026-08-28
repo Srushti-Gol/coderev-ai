@@ -40,101 +40,60 @@ Detect security vulnerabilities, performance bottlenecks, duplicate code, and te
 
 ## 📸 Screenshots
 
-### Pull Request Analysis — AI Review Comments
-
-> Every PR gets a full AI-generated review with categorised findings: Security, Bugs, Performance, Readability, Best Practices, and auto-generated tests.
-
-![PR Analysis View](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-analysis.png)
-
-The AI reviewer acts as a senior engineer. It reads the full diff, understands context, and posts structured comments directly on GitHub — with before/after code suggestions you can apply with one click.
-
----
-
 ### Dashboard — PR Velocity & Metrics
 
-> Real-time engineering metrics: open PRs, merge rate, average cycle time, time to first review, stale PRs, and awaiting-review queue.
+> Real-time engineering metrics: open PRs, merge rate, avg cycle time, time to first review, stale PR alerts, and review workload — all in one view.
 
-![Dashboard Overview](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/dashboard.png)
 
 **Charts included:**
 - 📈 PR Velocity — opened, merged, closed per week (line chart)
 - ⏱ Avg Cycle Time — hours from open to merge per week (bar chart)
-- 👥 Review Workload — pending vs completed per reviewer (horizontal bar)
+- 👥 Review Workload — reviews per author (horizontal bar)
 - 🍩 PR Size Distribution — tiny / small / medium / large / huge (donut chart)
-- 📅 Weekly Digest — merged this week, open PRs, avg cycle time vs prior week
-
----
-
-### Code Review Dashboard — Suggestion Categories
-
-> Aggregated view across all PRs: total suggestions by category, PRs per day trend, and suggestion breakdown.
-
-![Code Review Dashboard](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/code-review-dashboard.png)
-
-Filter by repository and date range. Drill into individual PRs to see all findings with file paths, line numbers, and AI-generated fixes.
+- 📅 Weekly Digest — merged, open PRs, cycle time vs prior week
 
 ---
 
 ### Pull Request List — Pipeline View
 
-> See all open PRs at a glance with their pipeline stage (Opened → Checks → AI Review → Ready), age in days, scope (files changed), and one-click Review/Merge actions.
+> Every PR shows its live pipeline stage (Opened → CI → Review → Done), age, scope, and one-click Review/Merge actions. Stale PRs highlighted in red.
 
-![Pull Requests List](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-list.png)
-
-PRs stale beyond your configured threshold are highlighted in red. Filter by status, author, or repository.
+![Pull Requests](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-list.png)
 
 ---
 
-### AI-Assisted Review — Finding Detail
+### AI Code Review — Security & Analysis Findings
 
-> Each finding shows severity (CRITICAL / HIGH / MEDIUM / LOW), affected file and line range, a plain-English explanation, and an AI-generated code fix.
+> Claude AI reads the full diff and posts structured findings across Security, Bugs, Performance, Readability, and Best Practices tabs — each with file path, line number, and a verified code fix.
 
-![AI Review Finding](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/ai-finding.png)
-
-Security findings include CVE references where applicable. Code suggestions are tested before being marked **Verified** ✅.
+![PR Analysis](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-analysis.png)
 
 ---
 
-### Technical Debt & Code Quality
+### Repositories — Health Overview
 
-> Track your quality score over time. See cost-to-fix estimates per category: defect removal, duplicate code refactoring, complexity reduction, and readability improvements.
+> All connected repositories with live quality scores, open PR counts, language, and last-analysis timestamps.
 
-![Technical Debt Dashboard](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/technical-debt.png)
-
-Compare quality between any two releases or git tags. The debt score is a weighted composite of security findings, complexity, duplication, and test coverage.
+![Repositories](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/repositories.png)
 
 ---
 
 ### Security Findings — Vulnerability Report
 
-> Full security analysis with CVSS-inspired severity scoring. Export findings as SARIF 2.1.0 for GitHub Advanced Security integration.
+> Full security scan results with CVSS-inspired severity scoring. Filter by severity, export as SARIF 2.1.0 for GitHub Advanced Security integration.
 
-![Security Findings](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/security.png)
+![Security](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/security.png)
 
-Detects:
-- 🔴 SQL Injection (direct string interpolation in queries)
-- 🔴 Hardcoded secrets (API keys, passwords, tokens)
-- 🟠 XSS vulnerabilities (unescaped user input in HTML)
-- 🟠 Path traversal (unsanitised file paths)
-- 🟡 Command injection (shell=True with user input)
-- 🟡 Insecure random (using `random` instead of `secrets`)
-- 🟡 Weak cryptography (MD5, SHA1 for passwords)
+Detects SQL injection, hardcoded secrets, XSS, path traversal, command injection, insecure random, and weak cryptography.
 
 ---
 
-### PR Pipeline — Progress Tracker
+### Settings — Integration & Analysis Config
 
-> Track every PR through the pipeline: Opened → Checks → AI Review → Ready to Merge, with age indicators and scope (files changed).
+> Configure GitHub integration, auto-analysis rules, quality gates, and Slack/email notification webhooks per repository.
 
-![PR Pipeline](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/pr-pipeline.png)
-
----
-
-### AI Review Detail — Findings Breakdown
-
-> Deep-dive into individual PR findings with tabs for Security, Bugs, Performance, Readability, Best Practices, and Docs, plus a final verdict with confidence score.
-
-![AI Review Detail](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/ai-review-detail.png)
+![Settings](https://raw.githubusercontent.com/Srushti-Gol/coderev-ai/main/docs/screenshots/settings.png)
 
 ---
 
